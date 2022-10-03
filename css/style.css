@@ -82,7 +82,7 @@ li{
 }
 /* Buttons - Links - imgs */
 button{
-    padding: var(--spacing-xsmall);
+    padding: var(--spacing-xsmall) calc(2 * var(--spacing-xsmall));
     background-color: var(--btn_c-primary);
     text-align: center;
     color: var(--txt_c-primary-negative);
@@ -114,8 +114,29 @@ a{
     max-width: 1200px;
 }
 
+button.big{
+    width: var(--spacing-xlarge);
+}
+
 .row{
     display: flex;
+    justify-content: space-between;
+}
+
+.col-30{
+    flex-basis: 30%;
+}
+
+.col-40{
+    flex-basis: 40%;
+}
+
+.col-60{
+    flex-basis: 60%;
+}
+
+.col-70{
+    flex-basis: 70%;
 }
 /* Utility End */
 
@@ -129,13 +150,12 @@ header{
     left: 0;
     right: 0;
     height: var(--spacing-medium);
+    z-index: 10;
 }
 
 header nav{
     height: 100%;
     padding: var(--spacing-xsmall);
-    display: flex;
-    justify-content: space-between;
 }
 
 header a{
@@ -146,9 +166,21 @@ header a{
 
 header ul,
 header .logo-container{
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    margin-right: var(--spacing-xsmall);
+    margin-right: var(--spacing-small);
 }
 
 /* ************************************************************************ */
+
+/* Main */
+section{
+    padding: var(--spacing-medium) 0;
+}
+
+/* jumbo */
+.jumbo{
+    background-color: var(--bg_c-secondary);
+    margin: var(--spacing-medium) 0 var(--spacing-large);
+    padding: 0;
+}
