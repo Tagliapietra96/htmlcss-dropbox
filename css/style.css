@@ -71,17 +71,18 @@ h2{
 
 h3{
     font-size: 1.5rem;
-    margin-bottom: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-small);
 }
 
 h4{
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: calc(var(--spacing-xsmall) * 2);
 }
 
 /* Text */
 p{
     font-size: 1rem;
+    margin: var(--spacing-xsmall) 0;
 }
 
 span{
@@ -174,7 +175,7 @@ button.white{
     padding: var(--spacing-xxsmall);
 }
 
-.padding-xsmll{
+.padding-xsmall{
     padding: var(--spacing-xsmall);
 }
 
@@ -186,6 +187,33 @@ button.white{
     padding: var(--spacing-medium);
 }
 
+.margin-xxsmall{
+    margin: var(--spacing-xxsmall) 0;
+}
+
+.margin-xsmall{
+    margin: var(--spacing-xsmall) 0;
+}
+
+.margin-small{
+    margin: var(--spacing-small) 0;
+}
+
+.margin-medium{
+    margin: var(--spacing-medium) 0;
+}
+
+.margin-large{
+    margin: var(--spacing-large) 0;
+}
+
+.margin-xlarge{
+    margin: var(--spacing-xlarge) 0;
+}
+
+.margin-xxlarge{
+    margin: var(--spacing-xxlarge) 0;
+}
 /* Utility End */
 
 /* ************************************************************************ */
@@ -203,7 +231,6 @@ header{
 
 header nav{
     height: 100%;
-    padding: var(--spacing-xsmall);
 }
 
 header a{
@@ -223,7 +250,7 @@ header .logo-container{
 
 /* Main */
 section{
-    padding: var(--spacing-large) 0;
+    padding: var(--spacing-xlarge) 0;
 }
 
 /* ------------------------------------ */
@@ -239,10 +266,6 @@ section{
     color: var(--txt_c-tertiary);
 }
 
-.jumbo button{
-    margin: var(--spacing-small) 0;
-}
-
 .jumbo .arrow-icon{
     font-size: 3rem;
     margin-top: var(--spacing-xlarge);
@@ -256,10 +279,6 @@ section{
 /* ------------------------------------ */
 
 /* Plan selector */
-.small-plan-card-container{
-    margin-bottom: var(--spacing-medium);
-}
-
 .plan-card{
     border: 1px solid var(--border_c-primary);
 }
@@ -267,7 +286,6 @@ section{
 .plan-card-head{
     border-bottom: 1px solid var(--border_c-primary);
     text-align: center;
-    padding:var(--spacing-xsmall);
 }
 
 .plan-card-body{
@@ -302,10 +320,6 @@ section{
 
 .info-icon.blue{
     color: var(--btn_c-primary);
-}
-
-.plan-card.big p{
-    margin-bottom: var(--spacing-small);
 }
 
 /* ------------------------------------ */
