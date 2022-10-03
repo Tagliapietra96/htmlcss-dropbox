@@ -245,12 +245,13 @@ section{
 }
 
 .plan-card span{
-    color: var(--border_c-primary);
+    color: var(--txt_c-tertiary);
     margin: var(--spacing-xsmall) 0;
     display: inline-block;
 }
 
-.plan-card .plan-info{
+.plan-card .plan-info,
+.plan-links .buy-now{
     margin: var(--spacing-small) 0;
 }
 
@@ -258,17 +259,20 @@ section{
 .key-features li{
     display: flex;
     column-gap: var(--spacing-xsmall);
-    margin: var(--spacing-xsmall);
+    margin: var(--spacing-xsmall) 0;
 }
 
 .plan-links{
     margin: 45px 0;
 }
 
-.plan-links .buy-now{
-    margin: var(--spacing-small) 0;
-}
-
 .info-icon.blue{
     color: var(--btn_c-primary);
 }
+
+.plan-card.big p{
+    margin-bottom: var(--spacing-small);
+}
+
+/* ------------------------------------ */
+
