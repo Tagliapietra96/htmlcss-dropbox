@@ -92,7 +92,31 @@ button{
 /* ************************************************************************ */
 
 /* Utility Start */
+.container{
+    max-width: 920px;
+    margin: auto;
+}
 
+.container.big{
+    max-width: 1200px;
+}
 /* Utility End */
+
+/* ************************************************************************ */
+
+/* Header */
+header{
+    background-color: var(--bg_c-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--spacing-large);
+}
+
+header nav{
+    height: 100%;
+    padding: var(--spacing-xsmall);
+}
 
 /* ************************************************************************ */
