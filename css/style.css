@@ -69,10 +69,12 @@ h2{
 
 h3{
     font-size: 1.5rem;
+    margin-bottom: var(--spacing-xsmall);
 }
 
 h4{
     font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 /* Text */
@@ -145,6 +147,11 @@ button.big{
 .col-70{
     flex-basis: 70%;
 }
+
+.small-hr{
+    width: 25%;
+    border-bottom: 1px solid var(--border_c-primary);
+}
 /* Utility End */
 
 /* ************************************************************************ */
@@ -185,6 +192,8 @@ section{
     padding: var(--spacing-medium) 0;
 }
 
+/* ------------------------------------ */
+
 /* jumbo */
 .jumbo{
     background-color: var(--bg_c-secondary);
@@ -210,7 +219,13 @@ section{
     top: var(--spacing-xlarge);
 }
 
+/* ------------------------------------ */
+
 /* Plan selector */
+.small-plan-card-container{
+    margin-bottom: 45px;
+}
+
 .plan-card{
     border: 1px solid var(--border_c-primary);
 }
@@ -218,10 +233,38 @@ section{
 .plan-card-head{
     border-bottom: 1px solid var(--border_c-primary);
     text-align: center;
-    padding: var(--spacing-xxsmall);
+    padding:var(--spacing-xsmall);
 }
 
 .plan-card-body{
-    padding: var(--spacing-xsmall);
+    padding:  var(--spacing-small)  var(--spacing-xsmall);
 }
 
+.plan-card span{
+    color: var(--border_c-primary);
+    margin: var(--spacing-xsmall) 0;
+    display: inline-block;
+}
+
+.plan-card .plan-info{
+    margin: var(--spacing-small) 0;
+}
+
+.plan-info li,
+.key-features li{
+    display: flex;
+    column-gap: var(--spacing-xsmall);
+    margin: var(--spacing-xsmall);
+}
+
+.plan-links{
+    margin: 45px 0;
+}
+
+.plan-links .buy-now{
+    margin: var(--spacing-small) 0;
+}
+
+.info-icon.blue{
+    color: var(--btn_c-primary);
+}
