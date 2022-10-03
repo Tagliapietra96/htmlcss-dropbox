@@ -1,0 +1,17 @@
+/* Reset Start */
+/* Sizing reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Rem reset */
+html{
+	font-size: 15px;
+}
+/* Font reset */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* Reset End */
+
