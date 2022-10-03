@@ -16,6 +16,7 @@
     --bg_c-brand-8: #ffd82f;
 
     --btn_c-primary: #0061ff;
+    --border_c-primary: #d0d0d3;
 
     --txt_c-primary: black;
     --txt_c-primary-negative: white;
@@ -63,10 +64,15 @@ h1{
 
 h2{
     font-size: 2rem;
+    margin-bottom: var(--spacing-small);
 }
 
 h3{
     font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1rem;
 }
 
 /* Text */
@@ -205,3 +211,17 @@ section{
 }
 
 /* Plan selector */
+.plan-card{
+    border: 1px solid var(--border_c-primary);
+}
+
+.plan-card-head{
+    border-bottom: 1px solid var(--border_c-primary);
+    text-align: center;
+    padding: var(--spacing-xxsmall);
+}
+
+.plan-card-body{
+    padding: var(--spacing-xsmall);
+}
+
