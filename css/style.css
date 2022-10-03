@@ -240,6 +240,10 @@ section{
     padding:  var(--spacing-small)  var(--spacing-xsmall);
 }
 
+.plan-card p{
+    font-weight: bold;
+}
+
 .plan-card span{
     color: var(--border_c-primary);
     margin: var(--spacing-xsmall) 0;
