@@ -57,7 +57,8 @@ body{
 /* Tags Reset Start */
 /* Titles */
 h1{
-    font-size: 3rem;
+    font-size: 4.5rem;
+    margin-bottom: var(--spacing-medium);
 }
 
 h2{
@@ -115,7 +116,7 @@ a{
 }
 
 button.big{
-    width: var(--spacing-xlarge);
+    width: 250px;
 }
 
 .row{
@@ -159,7 +160,7 @@ header nav{
 }
 
 header a{
-    color: var(--txt_c-secondary);
+    color: var(--txt_c-tertiary);
     text-decoration: none;
     padding: var(--spacing-xsmall);
 }
@@ -181,6 +182,26 @@ section{
 /* jumbo */
 .jumbo{
     background-color: var(--bg_c-secondary);
-    margin: var(--spacing-medium) 0 var(--spacing-large);
+    margin: var(--spacing-medium) 0 var(--spacing-xlarge);
     padding: 0;
 }
+
+.jumbo p{
+    color: var(--txt_c-tertiary);
+}
+
+.jumbo button{
+    margin: var(--spacing-small) 0;
+}
+
+.jumbo .arrow-icon{
+    font-size: 3rem;
+    margin-top: var(--spacing-xlarge);
+}
+
+.drop-down{
+    position: relative;
+    top: var(--spacing-xlarge);
+}
+
+/* Plan selector */
