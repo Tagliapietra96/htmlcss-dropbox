@@ -1,3 +1,38 @@
+/* ************************************************************************ */
+
+:root{
+    /* colors */
+    --bg_c-primary: #ffffff;
+    --bg_c-secondary: #b4cfe7;
+    --bg_c-brand-center: #f5f5f5;
+    --bg_c-brand-1: #a2d39b;
+    --bg_c-brand-1-border: #d0e9cd;
+    --bg_c-brand-2: #61082b;
+    --bg_c-brand-3: #0093ce;
+    --bg_c-brand-4: #ff1c1c;
+    --bg_c-brand-5: #d5011f;
+    --bg_c-brand-6: #b4cfe7;
+    --bg_c-brand-7: #0c2581;
+    --bg_c-brand-8: #ffd82f;
+
+    --btn_c-primary: #0061ff;
+
+    --txt_c-primary: black;
+    --txt_c-primary-negative: white;
+    --txt_c-secondary: #121212;
+    --txt_c-tertiary: #666666;
+    --txt_c-special: #61062a;
+
+    /* Spacing */
+    --spacing-xsmall: 10px;
+    --spacing-small: 20px;
+    --spacing-medium: 30px;
+    --spacing-large: 45px;
+    --spacing-xlarge: 60px;
+}
+
+/* ************************************************************************ */
+
 /* Reset Start */
 /* Sizing reset */
 *{
@@ -12,6 +47,52 @@ html{
 /* Font reset */
 body{
 	font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg_c-primary);
 }
 /* Reset End */
 
+/* ************************************************************************ */
+
+/* Tags Reset Start */
+/* Titles */
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+/* Text */
+p{
+    font-size: 1rem;
+}
+
+span{
+    font-size: 1rem;
+}
+
+li{
+    list-style: none;
+}
+/* Buttons & Links */
+button{
+    padding: var(--spacing-xsmall);
+    background-color: var(--btn_c-primary);
+    text-align: center;
+    color: var(--txt_c-primary-negative);
+    border: none;
+}
+/* Tags Reset End */
+
+/* ************************************************************************ */
+
+/* Utility Start */
+
+/* Utility End */
+
+/* ************************************************************************ */
