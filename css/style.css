@@ -28,9 +28,10 @@
     --spacing-xxsmall: 5px;
     --spacing-xsmall: 10px;
     --spacing-small: 30px;
-    --spacing-medium: 60px;
-    --spacing-large: 80px;
+    --spacing-medium: 45px;
+    --spacing-large: 60px;
     --spacing-xlarge: 100px;
+    --spacing-xxlarge: 250px;
 }
 
 /* ************************************************************************ */
@@ -50,6 +51,7 @@ html{
 body{
 	font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg_c-primary);
+    color: var(--txt_c-secondary);
 }
 /* Reset End */
 
@@ -59,7 +61,7 @@ body{
 /* Titles */
 h1{
     font-size: 4.5rem;
-    margin-bottom: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
 }
 
 h2{
@@ -109,6 +111,11 @@ a{
     font-size: 1rem;
     display: inline-block;
 }
+
+label{
+    display: inline-block;
+    margin-right: var(--spacing-small);
+}
 /* Tags Reset End */
 
 /* ************************************************************************ */
@@ -124,7 +131,17 @@ a{
 }
 
 button.big{
-    width: 250px;
+    width: var(--spacing-xxlarge);
+}
+
+button.border{
+    border: 1px solid var(--txt_c-secondary);
+    margin: var(--spacing-small) 0;
+}
+
+button.white{
+    color: var(--txt_c-tertiary);
+    background-color: var(--bg_c-primary);
 }
 
 .row{
@@ -152,6 +169,23 @@ button.big{
     width: 25%;
     border-bottom: 1px solid var(--border_c-primary);
 }
+
+.padding-xxsmll{
+    padding: var(--spacing-xxsmall);
+}
+
+.padding-xsmll{
+    padding: var(--spacing-xsmall);
+}
+
+.padding-small{
+    padding: var(--spacing-small);
+}
+
+.padding-medium{
+    padding: var(--spacing-medium);
+}
+
 /* Utility End */
 
 /* ************************************************************************ */
@@ -163,7 +197,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    height: var(--spacing-medium);
+    height: var(--spacing-large);
     z-index: 10;
 }
 
@@ -189,7 +223,7 @@ header .logo-container{
 
 /* Main */
 section{
-    padding: var(--spacing-medium) 0;
+    padding: var(--spacing-large) 0;
 }
 
 /* ------------------------------------ */
@@ -197,7 +231,7 @@ section{
 /* jumbo */
 .jumbo{
     background-color: var(--bg_c-secondary);
-    margin: var(--spacing-medium) 0 var(--spacing-xlarge);
+    margin: var(--spacing-large) 0 var(--spacing-xlarge);
     padding: 0;
 }
 
@@ -223,7 +257,7 @@ section{
 
 /* Plan selector */
 .small-plan-card-container{
-    margin-bottom: 45px;
+    margin-bottom: var(--spacing-medium);
 }
 
 .plan-card{
@@ -263,7 +297,7 @@ section{
 }
 
 .plan-links{
-    margin: 45px 0;
+    margin: var(--spacing-medium) 0;
 }
 
 .info-icon.blue{
@@ -275,4 +309,5 @@ section{
 }
 
 /* ------------------------------------ */
+
 
