@@ -158,6 +158,10 @@ button.white{
     flex-basis: 40%;
 }
 
+.col-50{
+    flex-basis: 50%;
+}
+
 .col-60{
     flex-basis: 60%;
 }
