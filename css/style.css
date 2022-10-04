@@ -158,10 +158,6 @@ button.white{
     flex-basis: 40%;
 }
 
-.col-50{
-    flex-basis: 50%;
-}
-
 .col-60{
     flex-basis: 60%;
 }
@@ -336,4 +332,62 @@ section.banner{
 .card-container{
     flex-wrap: wrap;
     row-gap: var(--spacing-small);
+}
+
+/* our partners */
+.col.row{
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: calc(100% / 3);
+}
+
+.col-50{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
+
+.our-partner img{
+    width: 50%;
+}
+
+.designit{
+    background-color: var(--bg_c-brand-1);
+    border: var(--spacing-xsmall) solid var(--bg_c-brand-1-border);
+}
+
+.arizona{
+    background-color: var(--bg_c-brand-2);
+}
+
+.florida{
+    background-color: var(--bg_c-brand-3);
+}
+
+.topps{
+    background-color: var(--bg_c-brand-4);
+}
+
+.bicycle{
+    background-color: var(--bg_c-brand-5);
+}
+
+.hearst{
+    background-color: var(--bg_c-brand-6);
+}
+
+.lonely{
+    background-color: var(--bg_c-brand-7);
+}
+
+.channel{
+    background-color: var(--bg_c-brand-8);
+}
+
+.brand-center{
+    background-color: var(--bg_c-brand-center);
 }
