@@ -66,7 +66,7 @@ h1{
 
 h2{
     font-size: 2rem;
-    margin-bottom: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
 }
 
 h3{
@@ -250,6 +250,10 @@ header .logo-container{
 
 /* Main */
 section{
+    padding: var(--spacing-large) 0;
+}
+
+section.banner{
     padding: var(--spacing-xlarge) 0;
 }
 
@@ -324,4 +328,8 @@ section{
 
 /* ------------------------------------ */
 
-
+/* business */
+.card-container{
+    flex-wrap: wrap;
+    row-gap: var(--spacing-small);
+}
