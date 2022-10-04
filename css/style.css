@@ -167,7 +167,7 @@ button.white{
 }
 
 .small-hr{
-    width: 25%;
+    width: 20%;
     border-bottom: 1px solid var(--border_c-primary);
 }
 
@@ -425,4 +425,26 @@ svg{
     right: var(--spacing-small);
     top: var(--spacing-small);
     bottom: var(--spacing-small);
+}
+
+/* ************************************************************************ */
+
+/* Footer */
+footer{
+    background-color: var(--txt_c-secondary);
+    color: var(--txt_c-primary-negative);
+    padding: var(--spacing-small) 0 var(--spacing-medium);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--txt_c-primary-negative);
+}
+
+footer li{
+    margin: var(--spacing-xsmall);
+}
+
+.lenguage{
+    color: var(--txt_c-tertiary);
 }
