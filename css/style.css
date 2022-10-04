@@ -14,6 +14,7 @@
     --bg_c-brand-6: #b4cfe7;
     --bg_c-brand-7: #0c2581;
     --bg_c-brand-8: #ffd82f;
+    --nav_hover: #efefef;
 
     --btn_c-primary: #0061ff;
     --border_c-primary: #d0d0d3;
@@ -117,6 +118,12 @@ img{
 a{
     font-size: 1rem;
     display: inline-block;
+    transform: scale(1);
+    transition: transform .7s;
+}
+
+a:hover{
+    transform: scale(1.1);
 }
 
 label{
@@ -241,6 +248,10 @@ header{
     z-index: 10;
 }
 
+header:hover{
+    background-color: var(--nav_hover);
+}
+
 header nav{
     height: 100%;
 }
@@ -248,7 +259,7 @@ header nav{
 header a{
     color: var(--txt_c-tertiary);
     text-decoration: none;
-    padding: var(--spacing-xsmall);
+    padding: calc(var(--spacing-small) - 1rem) var(--spacing-xsmall);
 }
 
 header ul,
@@ -258,9 +269,31 @@ header .logo-container{
     margin-right: var(--spacing-small);
 }
 
-/* ------------------------------------ */
+.droplist{
+    position: absolute;
+    background-color: var(--nav_hover);
+    width: var(--spacing-xxlarge);
+    display: none;
+}
 
-/* Hover fx */
+li:hover>.droplist{
+    display: block;
+}
+
+.droplist ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-xsmall);
+}
+
+.droplist li{
+    width: 100%;
+}
+
+.droplist li:not(:last-of-type){
+    border-bottom: 1px solid var(--border_c-primary);
+}
 
 
 /* ************************************************************************ */
