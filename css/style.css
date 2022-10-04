@@ -345,10 +345,10 @@ section.banner{
 
 .col-50{
     flex-basis: 50%;
+    height: calc((100vw / 3) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1 / 1;
 }
 
 .our-partner img{
@@ -390,4 +390,39 @@ section.banner{
 
 .brand-center{
     background-color: var(--bg_c-brand-center);
+}
+
+svg{
+    fill: var(--txt_c-secondary);
+    width: 50%;
+}
+/* ------------------------------------ */
+
+.banner.special{
+    background-color: var(--bg_c-secondary);
+}
+
+.banner.special h2{
+    color: var(--txt_c-special);
+    margin: 0;
+}
+
+/* ------------------------------------ */
+
+/* accordion */
+.accordion h4{
+    margin: 0;
+}
+
+.accordion .container>div{
+    border-bottom: 1px solid var(--border_c-primary);  
+    padding-left: 0;
+    position: relative;
+}
+
+.accordion-arrow{
+    position: absolute;
+    right: var(--spacing-small);
+    top: var(--spacing-small);
+    bottom: var(--spacing-small);
 }
