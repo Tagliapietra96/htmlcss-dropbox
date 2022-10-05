@@ -254,12 +254,13 @@ header:hover{
 
 header nav{
     height: 100%;
+    background-color: var(--bg_c-primary);
 }
 
 header a{
     color: var(--txt_c-tertiary);
     text-decoration: none;
-    padding: calc(var(--spacing-small) - 1rem) var(--spacing-xsmall);
+    padding: calc(var(--spacing-small) - 1rem + 2px) var(--spacing-xsmall);
 }
 
 header ul,
@@ -273,11 +274,13 @@ header .logo-container{
     position: absolute;
     background-color: var(--nav_hover);
     width: var(--spacing-xxlarge);
-    display: none;
+    transform: translateY(-200%);
+    z-index: -1;
+    transition: transform .5s;
 }
 
 li:hover>.droplist{
-    display: block;
+    transform: translateY(0);
 }
 
 .droplist ul{
@@ -391,6 +394,8 @@ section.banner{
 
 .col{
     flex-basis: calc(100% / 3);
+    height: calc(100vw / 3);
+    overflow: auto;
 }
 
 .col-50{
