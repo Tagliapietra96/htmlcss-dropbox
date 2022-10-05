@@ -531,17 +531,21 @@ svg{
     transition: transform .5s;
 }
 
-.question:hover i{
+[type=checkbox]:checked + label i{
     transform: rotate(180deg); 
 }
 
-.question:hover ul{
+[type=checkbox]:checked + label ul{
     display: block;
 }
 
-.question:hover .answer{
+[type=checkbox]:checked + label .answer{
     top:0;
     opacity: 1;
+}
+
+[type=checkbox]{
+    display: none;
 }
 
 /* ************************************************************************ */
