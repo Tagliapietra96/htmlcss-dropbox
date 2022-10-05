@@ -130,6 +130,10 @@ label{
     display: inline-block;
     margin-right: var(--spacing-small);
 }
+
+[type="radio"]{
+    display: none;
+}
 /* Tags Reset End */
 
 /* ************************************************************************ */
@@ -343,6 +347,21 @@ section.banner{
 /* ------------------------------------ */
 
 /* Plan selector */
+.radio-btn .placeholder{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--border_c-primary);
+    margin-right: 5px;
+    vertical-align: text-bottom;
+}
+
+.radio-btn input:checked + .placeholder{
+    border: 5px solid var(--btn_c-primary);
+
+}
+
 .plan-card{
     border: 1px solid var(--border_c-primary);
 }
