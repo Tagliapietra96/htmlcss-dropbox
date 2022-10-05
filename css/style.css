@@ -323,9 +323,16 @@ section.banner{
     color: var(--txt_c-tertiary);
 }
 
-.jumbo .arrow-icon{
+.jumbo .arrow-icon a{
     font-size: 3rem;
-    margin-top: var(--spacing-xlarge);
+    position: absolute;
+    top: 75%;
+    color: var(--txt_c-secondary);
+    transition: color .3s, transform .3s;
+}
+
+.jumbo .arrow-icon a:hover{
+    color: var(--btn_c-primary);
 }
 
 .drop-down{
